@@ -10,7 +10,7 @@ Find et sted på din harddisk, hvor du projektet liggende. I dette eksempel væl
 Åben din kommandoprompt, navigér til `c:\development` og indtast følgende kommando:
 
 ```
-git clone https://github.com/teltploek/nc-afterdark-seed
+git clone https://github.com/njjohansen/AfterDarkSaneEnrollment
 ```
 
 ## Opsætning af intranettet
@@ -26,7 +26,8 @@ På intranettet er der brug for følgende ting:
 ### Konfigurer projektet gennem `appSettings.js`
 
  Værdierne i `appSettings.js` fortæller applikationen, hvilken SP liste der er tale om mv.
- Åbn filen `scripts/appSettings.js`, og redigér følgende værdier så de passer med dit tilmeldingswebsite:
+
+1.    Åbn filen `scripts/appSettings.js`, og redigér følgende værdier så de passer med dit tilmeldingswebsite:
  
  <table>
   <tr>
@@ -48,9 +49,9 @@ På intranettet er der brug for følgende ting:
   </tr>
 </table>  
 
-## Deployering på intranettet
+## Deployering og test på intranettet
 
-Intranettet kører SharePoint 2007, og tanken med dette projekt er, at integrere med AD'et således at vi let og elegant har den ansattes indentitet til rådighed ud af boksen, ligesom vi har en database (SharePoint-liste) til, at gemme vores tilmeldinger. 
+Intranettet kører SharePoint 2007, og tanken med dette projekt er, at integrere med AD'et således at vi let og elegant har den ansattes identitet til rådighed, ligesom vi har en database (SharePoint-liste) til, at gemme vores tilmeldinger. 
 
 1.    Når dit dokumentbibliotek er oprettet, skal du åbne dokumentbiblioteket i stifinderen (dette skal gøres gennem IE).
 
