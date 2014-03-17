@@ -61,7 +61,7 @@ Intranettet kører SharePoint 2007, og tanken med dette projekt er, at integrere
 https://intranet.netcompany.com/personal/joj/AfterDarkRoyaleTilmeldinger/index.html
 ```
 
-4.    Du kan nu tilpasse tilmeldingssiden til dit arrangement. God fornøjelse!
+*     Du kan nu tilpasse tilmeldingssiden til dit arrangement. God fornøjelse!
 
 ## Godt at vide
 
