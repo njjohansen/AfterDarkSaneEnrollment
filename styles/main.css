@@ -17,7 +17,8 @@ div.guests {
 
 input:not([type]) {
 	padding: 10px;
-	width: 320px;
+	box-sizing: border-box;
+	width: 380px;
 }
 
 div#enroll {
