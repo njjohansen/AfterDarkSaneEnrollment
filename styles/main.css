@@ -1,0 +1,29 @@
+
+body {
+	color: white;
+	background: #000000 url('/personal/tmi/After Dark Royale 2014/bg.png') no-repeat top center;  
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+div.container {
+  width: 380px;
+  position: relative;
+  margin: 50px auto;
+}
+
+div.guests {
+  width: 320px;
+}
+
+input:not([type]) {
+	padding: 10px;
+	width: 320px;
+}
+
+div#enroll {
+	margin: 20px 0px;
+	padding: 20px;
+	text-align: center;
+	border: 1px solid white;
+	cursor: pointer;
+}

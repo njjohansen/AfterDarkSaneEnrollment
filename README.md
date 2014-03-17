@@ -1,4 +1,4 @@
-# Tilmeldingsside (Sane edition)
+# Opret tilmeldingsside
 
 ## Tjek koden ud
 Intet redundant software er nødvendigt for at kunne udvikle og bygge projektet! Du skal kun bruge [Git] til at hente projektet. 
@@ -39,6 +39,13 @@ På intranettet er der brug for følgende ting:
  <table>
   <tr>
     <th>Key</th><th>Beskrivelse</th>
+  </tr>
+  <tr>
+    <td>title</td>
+    <td>
+      Titlen på dit arrangement.
+      Eksempel: `After Dark Royale - Royal edition`
+    </td>
   </tr>
   <tr>
     <td>webUrl</td>

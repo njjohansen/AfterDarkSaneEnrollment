@@ -1,0 +1,23 @@
+<div class="container">	
+	<div class="innerContainer">
+		<div class="welcome">
+			<h3>Hej {{userName}}!</h3>
+			<p class="intro">After Dark byder velkommen til en eksklusiv aften!</p>
+			<p>Aftenen vil byde på velkendte koncepter, som poker, kasino og Bonds-babes i bedste Casino Royale stil.</p>
+			<p>Vi vil åbne for kalas i direkte forlængelse af NC Update, d. 25. april. Der er således absolut ingen logistisk udfordring forbundet med deltagelse i dette arrangement.</p>
+
+			<div ng-hide="isRegistered" id="enroll" ng-click="participate()">Tryk her for at tilmelde dig!</div>
+			<p ng-show="isRegistered"><ng-pluralize count="participants.length-1" when="{'0': 'Du er tilmeldt! ','one': 'Du er tilmeldt, ligesom 1 anden!','other': 'Du er tilmeldt, ligesom {} andre!'}"></ng-pluralize></p>
+			<div class="filter">
+				<input ng-model="query" placeholder="Søg i tilmeldte...">
+			</div>
+		</div>
+		<p>Der er {{participants.length}} tilmeldte</p>
+		<div class="guests">
+			<ul>
+				<li ng-repeat="person in participants | filter:query ">{{Bondify(person)}}</li>
+				<li ng-show="!participants.length">Endnu ingen tilmeldte</li>
+			</ul>
+		</div>
+	</div>
+</div>
