@@ -1,4 +1,4 @@
-# Netcompany After Dark tilmeldings-seed (Sane edition)
+# After Dark tilmeldings-seed (Sane edition)
 
 ## Tjek koden ud
 Intet redundant software er nødvendigt for at kunne udvikle og bygge projektet! Du skal kun bruge [Git] til at hente projektet. 
@@ -20,11 +20,11 @@ På intranettet er der brug for følgende ting:
 1.    Opret en custom SP liste til at indeholde tilmeldinger. Dette kan evt. gøres på din mysite (ex. `https://intranet.netcompany.com/personal/<initialer>/Lists/`, eller et andet sted hvor du har skriverettigheder). 
 
 2.    Rediger permissions, så alle kan skrive i listen. Hvis permissions ikke er tilstrækkelige vil dit tilmeldingswebsite ikke virke for alle. 
-..* List settings -> 
-..* Permissions for this list -> 
-..* Actions -> 
-..* Edit Permissions -> 
-..* Giv authenticated users contribute rettigheder
+  1. List settings -> 
+  2. Permissions for this list -> 
+  3. Actions -> 
+  4. Edit Permissions -> 
+  5. Giv authenticated users contribute rettigheder
 
 3.    Modificer default viewet i listen til, at have kolonnen `Created by`. Det er vigtigt at dette bliver gjort, da app'en ellers ikke kan se hvem der allerede er tilmeldt.
 
