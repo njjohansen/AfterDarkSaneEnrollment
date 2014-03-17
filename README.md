@@ -16,6 +16,7 @@ git clone https://github.com/teltploek/nc-afterdark-seed
 ## Opsætning af intranettet
 
 På intranettet er der brug for følgende ting:
+
 1.    Opret en custom SP liste til at indeholde tilmeldinger. Dette kan evt. gøres på din mysite (ex. `https://intranet.netcompany.com/personal/<initialer>/Lists/`, eller et andet sted hvor du har skriverettigheder). Husk at redigere permissions. Hvis permissions ikke er tilstrækkelige vil dit tilmeldingswebsite ikke virke for alle.
 
 2.    Modificer default viewet i listen til, at have kolonnen `Created by`. Det er vigtigt at dette bliver gjort, da app'en ellers ikke kan se hvem der allerede er tilmeldt.
@@ -65,9 +66,9 @@ https://intranet.netcompany.com/personal/joj/AfterDarkRoyaleTilmeldinger/index.h
 
 ## Godt at vide
 
-Projektet er bygget med:
+Projektet benytter følgende javascript frameworks:
   * [angularjs](http://angularjs.org/),
-  * [JQuery](http://jquery.com/)
+  * [jquery](http://jquery.com/)
 
 Du behøver ikke kendskab til disse teknologier for at tilpasse tilmeldingssiden.
 
