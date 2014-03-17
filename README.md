@@ -34,13 +34,15 @@ På intranettet er der brug for følgende ting:
   <tr>
     <td>webUrl</td>
     <td>
-      URL'en til listen - dog uden listens navn. Eksempel: `https://intranet.netcompany.com/personal/joj/`
+      URL'en til listen - dog uden listens navn. 
+      Eksempel: `https://intranet.netcompany.com/personal/joj/`
     </td>
   </tr>
   <tr>
     <td>listName</td>
     <td>
-      Navnet på den liste, hvor tilmeldinger skal registreres. Eksempel `AfterDarkRoyaleTilmeldinger`
+      Navnet på den liste, hvor tilmeldinger skal registreres. 
+      Eksempel `AfterDarkRoyaleTilmeldinger`
     </td>
   </tr>
 </table>  
@@ -56,8 +58,10 @@ Intranettet kører SharePoint 2007, og tanken med dette projekt er, at integrere
 3.    Test det ved at navigere din browser til e.g.:
       
 ```
-https://intranet.netcompany.com/personal/joj/AfterDarkRoyaleTilmeldinger/index.html#/
+https://intranet.netcompany.com/personal/joj/AfterDarkRoyaleTilmeldinger/index.html
 ```
+
+4.    Du kan nu tilpasse tilmeldingssiden til dit arrangement. God fornøjelses!
 
 ## Godt at vide
 
