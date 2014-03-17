@@ -15,7 +15,9 @@ Find et sted på din harddisk, hvor du projektet liggende. I dette eksempel væl
 
 På intranettet er der brug for følgende ting:
       1)  Opret en custom SP liste til at indeholde tilmeldinger. Dette kan evt. gøres på din mysite (ex. `https://intranet.netcompany.com/personal/<initialer>/Lists/`, eller et andet sted hvor du har skriverettigheder). Husk at redigere permissions. Hvis permissions ikke er tilstrækkelige vil dit tilmeldingswebsite ikke virke for alle.
+
       2)  Modificer default viewet i listen til, at have kolonnen `Created by`. Det er vigtigt at dette bliver gjort, da app'en ellers ikke kan se hvem der allerede er tilmeldt.
+      
       3)  Opret et Document Library til at indeholde tilmeldingssitet.
 
 ### Konfigurer projektet gennem `appSettings.js`
@@ -51,7 +53,7 @@ Intranettet kører SharePoint 2007, og tanken med dette projekt er, at integrere
 
       3)  Test det ved at navigere din browser til e.g.:
       
-  ```https://intranet.netcompany.com/personal/joj/AfterDarkRoyaleTilmeldinger/index.html#/```
+  ``` https://intranet.netcompany.com/personal/joj/AfterDarkRoyaleTilmeldinger/index.html#/ ```
 
 ## Godt at vide
 
