@@ -23,10 +23,11 @@ app.factory('SpAfterDark', ['AppSettings', function(AppSettings) {
 			}
 		).responseXML
 		var r = []
-		$(html.getElementsByTagNameNS('#RowsetSchema','row')).each(function(i, e) {
+		var x = html.getElementsByTagNameNS ? html.getElementsByTagNameNS('#RowsetSchema','row') : html.getElementsByTagName('z:row');
+		$(x).each(function(i, e) {
 			r.push(e.getAttribute('ows_Author').replace(/^[^#]*#/,''))
 		})
-		return $.unique(r).sort()
+		return $.unique(r.sort()).sort()
 	},
 	Participate: function() {
 		return $.ajax(
@@ -59,9 +60,9 @@ app.factory('SpAfterDark', ['AppSettings', function(AppSettings) {
 			{
 				type: 'get',
 				async: false,
-				url: AppSettings['webUrl'].replace(/\/.*$/, '')+'/_layouts/userdisp.aspx?Force=True&' + new Date().getTime(),
+				url: AppSettings['webUrl'].replace(/\/*$/, '')+'/_layouts/userdisp.aspx?Force=True&' + (new Date()).getTime()
 			}
-		).responseText).find('#SPFieldText')[1]).text().trim()
+		).responseText).find('#SPFieldText')[1]).text().replace(/^[\s\r\n ]+/mg,'').replace(/[\s\r\n ]+$/mg,'')
 	}
 	
   };

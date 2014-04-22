@@ -6,7 +6,7 @@ app.factory('AppSettings', [function(){
   return {
   	title: 'After Dark Royale - Royal Edition',
     webUrl : 'https://intranet.netcompany.com/personal/tmi/',
-    listName : 'After Dark Royale 2014 Tilmeldinger',
+    listName : 'After Dark Royale 2014 Tilmeldinger'
   };
   /*return {
   	title: 'After Dark Royale - Royal Edition',

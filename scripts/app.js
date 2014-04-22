@@ -8,6 +8,10 @@ var app = angular.module('app', ['ngResource'])
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+	  .when('/invitation', {
+        templateUrl: 'views/invitation.html',
+        controller: 'MainCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

@@ -1,4 +1,16 @@
-
+<div class="container">	
+	<div class="innerContainer">
+		<div class="welcome invitation">
+			<h3>Kære kollega,</h3>
+			<div id='enroll'><a href='#/' style='color:white'><strong>Tryk her for at gå til tilmeldingsside</strong></a></div>
+			<p class="intro">Så er det tiden at tilmelde sig <strong>After Dark Royale - Royal Edtion</strong>. Det bliver en fornem aften i selskab med James Bond, samt Bond's venner og fornøjelser. Det er <em>for your eyes only</em>! Den <strong>25. april</strong>, efter NC Update.</p>
+			<p>Puds dit stiveste suit af, så vi kan vise at Netcompany leverer med stil og pragt! <em>The world is not enough</em>! I løbet af aftenen skal vi have kåret Netcompany's 007. Det bliver så absolut nådesløst, hvor man med fordel kan mindes visdomsordene; <em>live and let die</em>! Mandomsprøven vil bestå af en altoverskyggende pokerturnering - det bliver <em>a view to a kill</em>!! Aftenen kategoriseres som uegnet for <em>octopussies</em>!</p>
+			<p>Skulle aftenen vise at du ikke er en skarptrænet, omvandrende testosteronbombe, så kan du søge tilflugt i det nærtliggende kasino, men husk nu; <em>you only live twice</em>!</p>
+			<p>Svar udbedes inden d. 18. april.</p>
+			<p><em>The living daylights</em><br />Jonatan, Theis og Jonas</p>
+		</div>
+	</div>
+</div>
 <div id='poker'>
 	<h4>Poker-program</h4>
 	<table>
@@ -37,28 +49,4 @@
 		<tr><td>22:00 - 23:00</td><td>Bond Babes</td></tr>
 	</table>
 	<p id='disclaimer'>Der tages forbehold for ændringer til det endelige program.</p>
-</div>
-<div class="container">	
-	<div class="innerContainer">
-		<div class="welcome">
-			<h3>Hej {{Bondify(userName)}}!</h3>
-			<p class="intro">After Dark byder velkommen til en eksklusiv aften!</p>
-			<p>Aftenen vil byde på velkendte koncepter, som poker, kasino og Bonds-babes i bedste Casino Royale stil.</p>
-			<p>Vi vil åbne for kalas i direkte forlængelse af NC Update, <strong>d. 25. april</strong>. Der er således absolut ingen logistisk udfordring forbundet med deltagelse i dette arrangement.</p>
-			<p>Svar udbedes inden d. 18. april.</p>
-			<p><strong>Hvis du ikke kan tilmelde, så brug Chrome eller IE10+!</strong></p>
-			<div ng-hide="isRegistered" id="enroll" ng-click="participate()">Tryk her for at tilmelde dig!</div>
-			<p ng-show="isRegistered"><b>Du er tilmeldt!</b></p>
-			<div class="filter">
-				<input ng-model="query" placeholder="Søg i tilmeldte...">
-			</div>
-		</div>
-		<p>Der er {{participants.length}} tilmeldte</p>
-		<div class="guests">
-			<ul>
-				<li ng-repeat="person in participants | filter:query ">{{Bondify(person)}}</li>
-				<li ng-show="!participants.length">Endnu ingen tilmeldte</li>
-			</ul>
-		</div>
-	</div>
 </div>
