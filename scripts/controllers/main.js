@@ -11,7 +11,7 @@ MainCtrl = function($rootScope, $scope, SpAfterDark, AppSettings) {
 	setScope($scope)
 	// function for enrollment
 	$scope.participate = function(listName){
-		console.log("Registrerer..");
+		//console.log("Registrerer..");
 		//$scope.openLoading('Registrerer tilmelding...');
 			$scope.newEventPromise = SpAfterDark.Participate();
 		setScope($scope)
