@@ -41,22 +41,23 @@
 <div class="container">	
 	<div class="innerContainer">
 		<div class="welcome">
-			<h3>Hej {{Bondify(userName)}}!</h3>
+			<h3>Hej {{userName}}!</h3>
 			<p class="intro">After Dark byder velkommen til en eksklusiv aften!</p>
 			<p>Aftenen vil byde på velkendte koncepter, som poker, kasino og Bonds-babes i bedste Casino Royale stil.</p>
 			<p>Vi vil åbne for kalas i direkte forlængelse af NC Update, <strong>d. 25. april</strong>. Der er således absolut ingen logistisk udfordring forbundet med deltagelse i dette arrangement.</p>
 			<p>Svar udbedes inden d. 18. april.</p>
 			<p><strong>Hvis du ikke kan tilmelde, så brug Chrome eller IE10+!</strong></p>
-			<div ng-hide="isRegistered" id="enroll" ng-click="participate()">Tryk her for at tilmelde dig!</div>
+			<div ng-hide="isRegistered" id="enroll" ng-click="participate(1)">Tryk her for at tilmelde dig!</div>
+			<div ng-hide="isRegistered || !isPartnerEvent" id="enroll" ng-click="participate(2)">Tryk her for at tilmelde din partner og dig!</div>
 			<p ng-show="isRegistered"><b>Du er tilmeldt!</b></p>
 			<div class="filter">
 				<input ng-model="query" placeholder="Søg i tilmeldte...">
 			</div>
 		</div>
-		<p>Der er {{participants.length}} tilmeldte</p>
+		<p>Der er {{nrOfParticipants}} tilmeldte</p>
 		<div class="guests">
 			<ul>
-				<li ng-repeat="person in participants | filter:query ">{{Bondify(person)}}</li>
+				<li ng-repeat="person in participants | filter:query ">{{person}}</li>
 				<li ng-show="!participants.length">Endnu ingen tilmeldte</li>
 			</ul>
 		</div>

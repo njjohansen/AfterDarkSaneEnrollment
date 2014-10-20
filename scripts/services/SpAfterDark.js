@@ -24,12 +24,13 @@ app.factory('SpAfterDark', ['AppSettings', function(AppSettings) {
 		).responseXML
 		var r = []
 		var x = html.getElementsByTagNameNS ? html.getElementsByTagNameNS('#RowsetSchema','row') : html.getElementsByTagName('z:row');
+		
 		$(x).each(function(i, e) {
-			r.push(e.getAttribute('ows_Author').replace(/^[^#]*#/,''))
+			r[e.getAttribute('ows_Author').replace(/^[^#]*#/,'')] = parseInt(e.getAttribute('ows_Title'));
 		})
-		return $.unique(r.sort()).sort()
+		return r;
 	},
-	Participate: function() {
+	Participate: function(x) {
 		return $.ajax(
 			{
 				type: 'post',
@@ -45,7 +46,7 @@ app.factory('SpAfterDark', ['AppSettings', function(AppSettings) {
 			<Batch>\
 			   <Method ID="2" Cmd="New">\
 				  <Field Name="ID" >New</Field>\
-				  <Field Name="Title">Thumbs up</Field>\
+				  <Field Name="Title">'+x+'</Field>\
 			   </Method>\
 			</Batch>\
 		  </updates>\
