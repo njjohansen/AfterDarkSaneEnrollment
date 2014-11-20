@@ -61,6 +61,12 @@ På intranettet er der brug for følgende ting:
       Eksempel `After Dark Royale 2014 Tilmeldinger`
     </td>
   </tr>
+  <tr>
+    <td>isPartnerEvent</td>
+    <td>
+      Sættes til 'true' hvis man skal have mulighed for at medbringe partner.
+    </td>
+  </tr>
 </table>  
 
 ## Deployering og test på intranettet
