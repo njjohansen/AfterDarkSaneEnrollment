@@ -83,7 +83,7 @@ Intranettet kører SharePoint 2007, og tanken med dette projekt er, at integrere
 3.    Test det ved at navigere din browser til e.g.:
       
 ```
-https://intranet.netcompany.com/personal/tmi/After%20Dark%20Royale%202014/index.html
+https://mysites.netcompany.com/personal/<initialer>/<mappe>/index.html/
 ```
 
 *     Du kan nu tilpasse tilmeldingssiden til dit arrangement. God fornøjelse!
