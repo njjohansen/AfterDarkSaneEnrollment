@@ -24,7 +24,7 @@ På intranettet er der brug for følgende ting:
   2. Vælg `Permissions for this list`
   3. Vælg `Actions`
   4. Vælg `Edit Permissions`
-  5. Giv contribute rettigheder til `authenticated users`
+  5. Giv contribute rettigheder til `authenticated users` og `everyone`
 
 3.    Modificer default viewet i listen til, at have kolonnen `Created by`. Det er vigtigt at dette bliver gjort, da app'en ellers ikke kan se hvem der allerede er tilmeldt.
 
