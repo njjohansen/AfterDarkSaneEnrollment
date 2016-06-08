@@ -17,18 +17,21 @@ git clone https://github.com/njjohansen/AfterDarkSaneEnrollment
 
 På intranettet er der brug for følgende ting:
 
-1.    Opret en custom SP liste til at indeholde tilmeldinger. Dette kan evt. gøres på din mysite (ex. `https://intranet.netcompany.com/personal/<initialer>/Lists/`, eller et andet sted hvor du har skriverettigheder). 
+1.    Opret en custom SP liste til at indeholde tilmeldinger. Dette kan evt. gøres på din mysite (ex. `https://mysites.netcompany.com/personal/<initialer>/_layouts/15/viewlsts.aspx`, eller et andet sted hvor du har skriverettigheder). 
 
 2.    Rediger permissions, så alle kan skrive i listen. Hvis permissions ikke er tilstrækkelige vil dit tilmeldingswebsite ikke virke for alle. 
   1. Vælg `List settings`
   2. Vælg `Permissions for this list`
   3. Vælg `Actions`
   4. Vælg `Edit Permissions`
-  5. Giv contribute rettigheder til `authenticated users` og `everyone`
+  5. Giv contribute rettigheder til `authenticated users` og `Everyone`
 
 3.    Modificer default viewet i listen til, at have kolonnen `Created by`. Det er vigtigt at dette bliver gjort, da app'en ellers ikke kan se hvem der allerede er tilmeldt.
 
-4.    Opret et Document Library til at indeholde tilmeldingssitet.
+4.    Opload indeholdet til tilmeldingssitet:
+  1. Åben Document Library  med "Open with Explorer"
+  2. Gå tilbage til råden
+  3. Opret en ny mappe og oploade tilmeldingssitet
 
 ### Konfigurer projektet gennem `appSettings.js`
 
